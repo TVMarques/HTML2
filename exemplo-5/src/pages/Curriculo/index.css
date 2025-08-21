@@ -1,0 +1,106 @@
+body{/*Esse comando meche com todo o body*/
+    width: 970px;/*Total da largura*/
+    margin: 0 auto;/*espaçamento 0 encima e embaixo e automático dos lados, assim, todo o conteúdo fica no centro da página*/
+}
+
+#foto{
+    width: 120px;
+    height: 120px;
+    background-color: #666666;
+    margin: 0 auto;
+}
+
+.eu{
+    width: 120px;
+    height: 120px;
+}
+
+h2{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav{
+    margin: 4px 0;
+    
+}
+
+ul{
+    list-style-type: none;/*tira os marcadores do link*/
+    padding: 4px;
+}
+
+li{
+    margin: 8px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none;
+    color:#000000;
+}
+
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    margin-top: 18px;
+    border-top: solid 3px #666666;
+    padding-top: 10px;
+}
+
+p{
+    margin: 14px 0;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destaque-vermelho{
+    color: rgb(190, 29, 29);
+}
+
+header{
+    text-align: center;
+    font-size: 18px;
+    padding: 24px;
+
+    border-top: solid 2px #000000;
+    border-bottom: solid 2px #000000;
+    
+}
+
+ .job {
+    margin: 8px;
+    width: 210px;
+    height: 250px;
+    background-color: #cccccc;
+    float: left;
+}
+
+.quebra{/*classe criada para encerrar o efeito do float sobre o footer*/
+    clear: both;
+}
+
+footer{
+    text-align: center;
+}
+
+.baixo{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (min-width:1024px){/*só acima desta largura as regras do CSS funcionarão normalmente para tela grande---MOBILE---*/
+    aside{
+        width: 20%;
+        padding: 8px;
+        float: left;
+        text-align: right;
+   }
+   
+   main{
+       float: right;
+       width:75%;
+       padding: 8px;
+    }
+}

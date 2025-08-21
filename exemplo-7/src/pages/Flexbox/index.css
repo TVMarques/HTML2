@@ -1,0 +1,55 @@
+#moldura{
+    /*Só de colocar o flex, os elementos vão se comportar um ao lado do outro sem precisar do float*/
+    /*Colocando inline-flex, ele se ajusta aos ítens*/
+    display: flex;/*Esta propriedade torna o container exibido na forma de flexbox*/
+    
+    /*Colocando agora uma propriedade do flexbox*/
+    /*flex-direction // naturalmente é row//
+    flex-direction: row-reverse;/*colocando outro: row-reverse ecolumn-reverse*/
+    
+    /*flex-wrap-- Faz os elementos irem para a linha de baixo quando há estouro de tela -- // -- Também é usado para o align-content --
+    flex-wrap: wrap ;/*a outra propriedade é o wrap-reverse*/
+
+    /*justfy-content*/
+    /*flex-start -- joga o conteúdo para o início*/
+    /*flex-end -- joga o conteúdo para o final*/
+    /*center -- joga o conteúdo para o centro do container*/
+    /*space-between -- ajusta os elementos ao longo do container, colocando espaço ENTRE os elementos*/
+    /*space-around -- coloca espaço ao redor dos elementos do container//*--> coloque o asterístico para o outro lado da segunda barra
+    justify-content: space-evenly;/*space-evenly -- faz com que o esspaaço ao redor dos elementos seja igualado, diferente do space-around*/
+
+    /*align-items*/
+    /*flex-end-- o topo se alinha abaixo do container*/
+    /*flex-start-- o topo se alinha acima do container*/
+    /* baseline -- Faz o alinhamento base do texto, não importando a fonte*/
+    /*stretch -- Faz os elementos se ajustarem na altura do container*/
+    /*align-items: stretch ;*/
+
+    /*align-conntent -- Alinhando o conteúdo --*/
+    /*space-between -- Coloca espaço entre uma linha e outra de elementos // -- usando bastante elementos no código html - Não esqueça*/
+    /*space-around -- Coloca o espaço na parte de cima e de baixo das linhas dos elementos*/
+    /*stretch -- Coloca encima*/
+    /*align-content: center;*/
+
+    height: 500px;/*ajuste para o align-items*/
+    border: solid 1px #333333;
+    background-color: #cccccc;
+
+    /*Coloque agora as propriedades inline*/
+    /*
+        Order:
+        flex-grow
+        flex-shirink
+    */
+}
+
+#moldura div{/*Fazendo os elementos dentro do container terem um formato*/
+    background-color: #333333;
+    color:#ffffff;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    margin: 4px;
+
+    font-size: 24px;
+}   

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="index.css">
+
+     <title>Blog</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand">Cocina del Jefe</a>
+
+            <!--botão do menu sanduíche-->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="#menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--fim do botão do menu sanduíche-->
+
+            <!--menu da barra de navegação-->
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/Cardapio/index.html">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/Tabela-nutricional/index.html">Tabela Nutricional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/src/pages/Pedido/">Pedido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-target="#baixarEbook" data-toggle="modal">Baixar E-book</a></li>
+                </ul>
+            </div>
+        </nav>    
+    </header>
+
+    <main role="main" class="container">
+
+        <div class="row">
+            <div class="blog-main col-md-8">
+                <div class="blog-post texto-meio">
+                    Sobre o E-book 
+                    Comece contando uma história. Histórias despertam emoções. Fazem com que seu público se sinta na situação que ainda não existe, como um alívio
+
+
+                    Problema:
+                    Fale sobre as dores que seu público enfrenta, como falta de tempo para cozinhar, ou não ter ingredienntes sofisticados. Isso gera conexão.
+                    
+                    Solução:
+                    Conte como esse problema pode ser resolvido. Dê esxemplos, podendodizer das soluções temporárias, ou aquelas que são caras. Não fale ainda do seu produto.
+
+                    Benefício:
+                    Fale do seu produto, como ele pode resolver o problema e um benefício que seus concorrentes não têm. É nessa hora que seu produto é visto como uma opção melhor que a do concorrente. 
+
+                    Faça sua oferta usando gatilho de escasssez (poucas unidades) e urgência (desconto encerrra as 24h).
+
+                    Para pesquisae um assunto nessa página tecle Ctrl+f.
+                </div>
+            </div>
+
+            <aside class="blog-sidebar col-md-4">
+                <div class="p-3">
+                    E-book receitas de culinária
+                    9,90
+                </div>
+
+                <div class="p-3">
+                    Receitas de Massas
+                    Receitas de Tortas
+                    Receitas Veganas
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!--Início da caixa modal-->
+
+        <div class="modal fade" id="baixarEbook" tabindex="-1" role="dialog" aria-labelledby="tituloModal" aria-hidden="true">
+           <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                     <div class="modal-header">
+                        <h4 class="modal-title" id="tituloModal">Baixar E-book</h4>
+                        <br>
+                        <p>Preencha o formulário abaixo. Assim que recebermos seus dados, enviaremos um e-mail com o link.</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form action="/src/pages/obrigado/index.html" method="get">
+                            <label for="nome" class="d-sm-block">Seu nome</label>
+                            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digíte somente o primeiro nome">
+                            <br>
+                            <label for="email" class="d-sm-block">Seu E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Digíte seu E-mail">
+                            <br>
+                            <button type="submit" class="btn btn-block btn--lg btn-primary">Quero receber e participar da lista</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--fim da caixa modal-->
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
